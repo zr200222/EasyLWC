@@ -66,8 +66,6 @@ public class EventRegister {
 
 	@SubscribeEvent
 	public static void onChat(ClientChatReceivedEvent event) {
-
-		LOGGER.info(event.getMessage().getString());
 		if (event.getMessage().getString().length() > 6) {
 
 			if (event.getMessage().getString().substring(0, 12).equals("Notice: That") && run) {
